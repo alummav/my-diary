@@ -1,0 +1,41 @@
+<!-- entries/templates/entries/base.html -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Diary</title>
+    <link rel="stylesheet" href="{% static 'css/diary.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+    <div><h1><a href="/">Dear diary …</a></h1></div>
+
+    <div></div>
+    <div></div>
+    
+    {% if messages %}
+    <ul class="messages">
+    {% for message in messages %}
+        <li class="message">
+            {{ message }}
+        </li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+    {% block content %}{% endblock %}
+
+<hr>
+<a href="{% url 'admin:logout' %}"><button type="button" class="btn-danger"> Logout</button></a>
+</body>
+
+</body>
+
+</html>
