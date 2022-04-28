@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    background-color: turquoise;
 }
 
 body {
@@ -45,12 +46,12 @@ h2 {
 }
 
 article {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
 }
 
 p {
-    font-size: 1.2em;
-    padding-left: 1rem;
+    font-size: 1.0em;
+    padding-left: 5px;
     line-height: 1.3em;
     max-width: 36rem;
     color: dimgray;
@@ -96,16 +97,16 @@ input[type="submit"] {
 /* Messages */
 
 .messages {
-    padding: 0;
+    padding: 10;
     list-style: none;
 }
 
 .message {
     width: 100%;
-    background: lightblue;
+    background: blue;
     padding: 1rem;
     text-align: center;
-    margin: 1rem 0;
+    margin: 5rem 2rem;
 }
 
 /* Day coloring */
