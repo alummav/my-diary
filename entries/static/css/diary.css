@@ -2,12 +2,11 @@
 
 * {
     box-sizing: border-box;
-    font-size: 15px;
 }
 
 body {
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 a {
@@ -18,7 +17,8 @@ a:hover {
 }
 
 h1 {
-    font-size: 10px;
+    font-size: 4.8em;
+    text-align: center;
 }
 
 h1 a {
@@ -26,7 +26,7 @@ h1 a {
 }
 
 h2, h3 {
-    font-size: 10px;
+    font-size: 1.4em;
     margin: 0;
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -45,12 +45,12 @@ h2 {
 }
 
 article {
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
-    font-size: 1.0em;
-    padding-left: 5px;
+    font-size: 1.2em;
+    padding-left: 1rem;
     line-height: 1.3em;
     max-width: 36rem;
     color: dimgray;
@@ -93,21 +93,6 @@ input[type="submit"] {
     min-width: 8rem;
 }
 
-/* Messages */
-
-.messages {
-    padding: 10;
-    list-style: none;
-}
-
-.message {
-    width: 100%;
-    background: blue;
-    padding: 1rem;
-    text-align: center;
-    margin: 5rem 2rem;
-}
-
 /* Day coloring */
 
 .Saturday,
@@ -115,3 +100,15 @@ input[type="submit"] {
     background-color: lightsalmon;
 }
 
+.messages {
+    padding: 0;
+    list-style: none;
+}
+
+.message {
+    width: 100%;
+    background: lightblue;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
